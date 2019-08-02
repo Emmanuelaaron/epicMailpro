@@ -7,6 +7,10 @@
     "start": "webpack-dev-server --open --mode development",
     "build": "webpack --mode production"
   },
+  "engines": {
+    "npm": "5.7.1",
+    "node": "9.5.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Emmanuelaaron/epicMailpro.git"
