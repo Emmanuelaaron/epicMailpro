@@ -71,13 +71,19 @@ a{
     margin-top: 20px;
 }
 
+.loader #loader {
+    position: fixed;
+    top: 300px;
+    bottom: 300px;
+}
+
 .loader {
     position: fixed;
     top: 650px;
     right: 0;
     bottom: 650px;
     left: 0;
-    background: white;
+    background: rgb(230, 28, 28);
    
   }
 
@@ -88,3 +94,8 @@ a{
       margin-top: 7px;
       width: 50%
   }
+
+  .login-form .email{
+      margin-bottom: 20px;
+  }
+

@@ -14,4 +14,11 @@ const helper = (data) => {
         resp.innerHTML = 'User with this email already exists! Choose another Email'
     }
 }
+
+export const validateLogin = (data) => {
+    let resp = document.getElementById('errors');
+    if(data.message){
+        resp.innerHTML = 'Invalid Login credentials'
+    }
+} 
 export default helper;
