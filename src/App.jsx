@@ -8,8 +8,8 @@ import Login from './components/login/index';
     return (
         <BrowserRouter>
             <Route path="/signup" component={SignUp}/>
-            <Route path="/" component={Login} />
+            <Route path="/login" component={Login} />
+
         </BrowserRouter>
     );
 }
-
