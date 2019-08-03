@@ -33,7 +33,6 @@ export class withSignUp extends Component {
                 userInfo={this.state}
                 isLoading={this.props.isLoading}
                 errors={this.props.errors}
-                // response={this.props.response}
               />
             </div>
         )
@@ -42,9 +41,7 @@ export class withSignUp extends Component {
 
 const mapStateToProps = state => (
     {
-        isLoading : state.SignupReducer.loading,
-        errors: state.SignupReducer.error,
-        // response: state.SignupReducer.response
+        // isLoading : state.SignupReducer.loading,
     });
 
 export default connect(mapStateToProps, {signUpUser})(withSignUp)

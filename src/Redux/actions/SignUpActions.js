@@ -10,10 +10,10 @@ const API_URI = 'https://epicmail.herokuapp.com/api/v2/auth/signup';
 
 export const signUpUser = userData => (dispatch) => {
     dispatch(started());
-    // console.log(userData);
     axios.post(API_URI, userData).then(
       (data) => {
-        // helper(data)
+        console.log(data.data.token)
+        localStorage.setItem('user_token', data.data.token);
         dispatch({
           type: 'SUCCESSFUL',
           payload: data,
@@ -22,8 +22,6 @@ export const signUpUser = userData => (dispatch) => {
       }
       ).catch(
         error => {
-          // console.log(error.response.data.errors)
-          console.log(error.response.data)
           helper(error.response.data)
           dispatch({ type: 'FAILED', payload:error.response.data.errors});
         })
