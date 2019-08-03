@@ -13,7 +13,7 @@ export const SignUpUserForm = ({ userInfo, handleChange, handleSubmit, isLoading
       <span id="blueish">Mail</span>
       </a>
       <div className="header-right">
-                <a href="/">Signin</a>
+                <a href="/login">Signin</a>
             </div>
       </div>
     <div className="signup-container">
