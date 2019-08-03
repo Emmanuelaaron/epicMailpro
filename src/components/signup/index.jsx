@@ -13,7 +13,7 @@ export const SignUpUserForm = ({ userInfo, handleChange, handleSubmit, isLoading
       <span id="blueish">Mail</span>
       </a>
       <div className="header-right">
-                <a href="../temps/signin.html">Signin</a>
+                <a href="/login">Signin</a>
             </div>
       </div>
     <div className="signup-container">
@@ -73,16 +73,6 @@ export const SignUpUserForm = ({ userInfo, handleChange, handleSubmit, isLoading
             />
           </div>
           <div id="errors">
-          {/* { 
-            errors.map((error,index)=>{
-              return <p key={index=0}>{error.missing}</p>
-            })[0]
-          } */}
-          {/* { 
-            errors.map((error,index)=>{
-              return <p key={index}>{error.message}</p>
-            })[0]
-          } */}
           </div>
           <div id='errors'/>
           <Loader loaded={!isLoading}>
@@ -101,7 +91,7 @@ SignUpUserForm.propTypes = {
   userInfo: PropTypes.object.isRequired,
   handleChange: PropTypes.func.isRequired,
   handleSubmit: PropTypes.func.isRequired,
-  isLoading: PropTypes.bool.isRequired
+  isLoading: PropTypes.bool
 }
 
 
