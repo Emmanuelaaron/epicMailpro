@@ -1,9 +1,14 @@
 import React from 'react';
+import { Provider } from 'react-redux';
+import { BrowserRouter , Route } from 'react-router-dom';
 
-function App(){
+import SignUp from './containers/signup/withSignUp';
+
+ export default function App(){
     return (
-        <h1>Welcome to EpicMail</h1>
+        <BrowserRouter>
+            <Route path="/signup" component={SignUp}/>
+        </BrowserRouter>
     );
 }
 
-export default App;
