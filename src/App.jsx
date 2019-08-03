@@ -9,6 +9,7 @@ import Login from './components/login/index';
         <BrowserRouter>
             <Route path="/signup" component={SignUp}/>
             <Route path="/login" component={Login} />
+
         </BrowserRouter>
     );
 }
