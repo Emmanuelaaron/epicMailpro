@@ -17,8 +17,8 @@ export const signUpUser = userData => (dispatch) => {
         dispatch({
           type: 'SUCCESSFUL',
           payload: data,
-        }, 
-        );
+        });
+        window.location = '/inbox'
       }
       ).catch(
         error => {

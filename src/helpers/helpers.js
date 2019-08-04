@@ -21,4 +21,13 @@ export const validateLogin = (data) => {
         resp.innerHTML = 'Invalid Login credentials'
     }
 } 
+
+export const validateInbox = (data) => {
+    let resp = document.getElementById('no-messages');
+    if(data.message === 'Oops..you do not have any messages!'){
+        resp.innerHTML = 'You do not have any received messages!'
+    }else if(data.message === 'invalid token!'){
+        window.location = '/login'
+    }
+}
 export default helper;
