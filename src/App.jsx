@@ -8,10 +8,9 @@ import inboxmessages from './containers/inbox/withInbox.js';
  export default function App(){
     return (
         <BrowserRouter>
+            <Route path="/" exact component={Login} />
             <Route path="/signup" component={SignUp}/>
-            <Route path="/login" component={Login} />
             <Route path="/inbox" component={inboxmessages}/>
-
         </BrowserRouter>
     );
 }
