@@ -27,7 +27,7 @@ export const validateInbox = (data) => {
     if(data.message === 'Oops..you do not have any messages!'){
         resp.innerHTML = 'You do not have any received messages!'
     }else if(data.message === 'invalid token!'){
-        window.location = '/login'
+        window.location = '/'
     }
 }
 export default helper;
