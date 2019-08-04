@@ -4,6 +4,7 @@ import React from 'react';
 import App from './App';
 import store from './store/index';
 
+/* istanbul ignore next */
 ReactDOM.render(
     <Provider store={store}>
           <App />,
