@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import inbox from "../../Redux/actions/inboxAction.js";
 import InboxComponent from "../../components/inbox/index";
 
+  /* istanbul ignore next */
 export class withInbox extends Component {
   componentDidMount() {
     const { fetchMessageinbox } = this.props;
@@ -11,7 +12,6 @@ export class withInbox extends Component {
   }
   render() {
     const { message } = this.props;
-    // console.log(message, '===============')
     return <InboxComponent message={message} />;
   }
 }

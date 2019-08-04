@@ -7,6 +7,7 @@ import axios from "axios";
 import { validateLogin } from "../../helpers/helpers.js";
 const API_URL = "https://epicmail.herokuapp.com/api/v2/auth/login";
 
+/* istanbul ignore next */
 export const loginUser = userData => dispatch => {
   dispatch({ type: LOGIN_USER_START });
   axios

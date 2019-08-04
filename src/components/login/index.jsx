@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import { loginUser } from "../../Redux/actions/LoginAction.js";
 
 const Loader = require("react-loader");
-
+  /* istanbul ignore next */
 export const LoginUserForm = ({ loginUser: Login, isLoading }) => {
   const [fields, setFields] = useState({ email: "", password: "" });
 

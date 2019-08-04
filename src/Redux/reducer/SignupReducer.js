@@ -1,10 +1,12 @@
+/* istanbul ignore next */
 const initialState = {
     loading: false,
     error: [],
     response: ""
 }
 
-const SignupReducer = (state = initialState, action) => {
+  /* istanbul ignore next */
+  const SignupReducer = (state = initialState, action) => {
     switch(action.type){
         case 'STARTED':
           return {

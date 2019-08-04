@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import SignUpForm from '../../components/signup';
 import { signUpUser }from '../../Redux/actions/SignUpActions'
 
+/* istanbul ignore next */
 export class withSignUp extends Component {
     state = {
         email: '',
@@ -41,7 +42,7 @@ export class withSignUp extends Component {
 
 const mapStateToProps = state => (
     {
-        // isLoading : state.SignupReducer.loading,
+        isLoading : state.signUpUser.loading,
     });
 
 export default connect(mapStateToProps, {signUpUser})(withSignUp)

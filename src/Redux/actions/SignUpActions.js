@@ -8,6 +8,7 @@ export const failedSignUp = (payload) => ({type: 'FAILED', payload});
 
 const API_URI = 'https://epicmail.herokuapp.com/api/v2/auth/signup';
 
+/* istanbul ignore next */
 export const signUpUser = userData => (dispatch) => {
     dispatch(started());
     axios.post(API_URI, userData).then(
