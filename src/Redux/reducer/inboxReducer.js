@@ -5,6 +5,7 @@ const initialState = {
     isLoading: false,
     errors: {},
   };
+  /* istanbul ignore next */
  const inboxReducer = (state=initialState, action) => {
      switch(action.type){
         case GET_MESSAGES_START:

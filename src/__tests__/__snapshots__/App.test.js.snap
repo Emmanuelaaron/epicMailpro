@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`hello should match snapshot 1`] = `
+<BrowserRouter>
+  <Route
+    component={
+      Object {
+        "$$typeof": Symbol(react.memo),
+        "WrappedComponent": [Function],
+        "compare": null,
+        "displayName": "Connect(LoginUserForm)",
+        "type": [Function],
+      }
+    }
+    exact={true}
+    path="/"
+  />
+  <Route
+    component={
+      Object {
+        "$$typeof": Symbol(react.memo),
+        "WrappedComponent": [Function],
+        "compare": null,
+        "displayName": "Connect(withSignUp)",
+        "type": [Function],
+      }
+    }
+    path="/signup"
+  />
+  <Route
+    component={
+      Object {
+        "$$typeof": Symbol(react.memo),
+        "WrappedComponent": [Function],
+        "compare": null,
+        "displayName": "Connect(withInbox)",
+        "type": [Function],
+      }
+    }
+    path="/inbox"
+  />
+</BrowserRouter>
+`;

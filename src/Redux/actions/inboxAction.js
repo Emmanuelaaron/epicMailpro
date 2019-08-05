@@ -14,7 +14,7 @@ const requestOptions = {
     "x-access-token": userToken
   }
 };
-
+/* istanbul ignore next */
 const inbox = () => dispatch => {
   dispatch({ type: GET_MESSAGES_START });
   fetch(API_URL, requestOptions)

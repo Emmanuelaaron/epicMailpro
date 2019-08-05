@@ -1,3 +1,4 @@
+/* istanbul ignore next */
 const helper = (data) => {
     let resp = document.getElementById('errors');
     if (data.errors){
@@ -15,6 +16,7 @@ const helper = (data) => {
     }
 }
 
+/* istanbul ignore next */
 export const validateLogin = (data) => {
     let resp = document.getElementById('errors');
     if(data.message){
@@ -22,6 +24,7 @@ export const validateLogin = (data) => {
     }
 } 
 
+/* istanbul ignore next */
 export const validateInbox = (data) => {
     let resp = document.getElementById('no-messages');
     if(data.message === 'Oops..you do not have any messages!'){
